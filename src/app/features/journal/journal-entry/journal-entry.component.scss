@@ -1,0 +1,67 @@
+.page {
+
+padding:20px;
+height:100vh;
+background:#f7f1f8;
+
+}
+
+
+header {
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+
+.toolbar {
+
+display:flex;
+justify-content:flex-end;
+gap:15px;
+
+}
+
+
+.toolbar button {
+
+border:none;
+background:none;
+font-size:22px;
+
+}
+
+
+.entry-area {
+
+margin-top:20px;
+display:flex;
+flex-direction:column;
+gap:15px;
+
+}
+
+
+label {
+
+font-size:18px;
+
+}
+
+
+.achievement {
+
+position:fixed;
+bottom:90px;
+left:50%;
+transform:translateX(-50%);
+
+padding:15px 30px;
+border-radius:30px;
+border:none;
+
+background:#d8c7ee;
+
+}
