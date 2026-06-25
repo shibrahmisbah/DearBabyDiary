@@ -11,4 +11,6 @@ import { BottomNavbarComponent } from '../../shared/components/bottom-navbar/bot
 })
 export class HomeComponent {
 
+
+
 }

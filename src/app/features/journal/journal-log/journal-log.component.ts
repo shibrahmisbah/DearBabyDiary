@@ -12,3 +12,4 @@ import { BottomNavbarComponent } from '../../../shared/components/bottom-navbar/
 export class JournalLogComponent {
 
 }
+
