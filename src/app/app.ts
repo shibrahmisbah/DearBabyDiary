@@ -1,5 +1,6 @@
 /**standalone true was missing */
 
+/** 
 import { Component, NO_ERRORS_SCHEMA, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FullCalendarModule } from '@fullcalendar/angular';
@@ -31,8 +32,9 @@ export class App implements OnInit {
   calendarPlugins = [dayGridPlugin];
 
 }
-*/
+**/
 
+/** 
 export class App {
   calendarOptions: CalendarOptions = {
     // 1. Register the plugins here
@@ -48,3 +50,16 @@ export class App {
     }
   };
 }
+**/
+
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet],
+  templateUrl: './app.html',
+  styleUrl: './app.scss'
+})
+export class App {}
