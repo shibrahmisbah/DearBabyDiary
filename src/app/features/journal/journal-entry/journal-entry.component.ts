@@ -9,6 +9,14 @@ import { BottomNavbarComponent } from '../../../shared/components/bottom-navbar/
   templateUrl: './journal-entry.component.html',
   styleUrl: './journal-entry.component.scss'
 })
+
+/** Journal Entry
+ * Tasks:
+ * Add notepad functionality
+ * Remove default template
+ * Change color 
+ * Light mode/dark mode
+ */
 export class JournalEntryComponent {
 
 }

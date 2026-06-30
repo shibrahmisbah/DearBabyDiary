@@ -19,36 +19,21 @@ Welcome Mom!
 type="text"
 placeholder="Search for entries">
 
-
-<div class="entry">
-
-📄 Baby's First Step
-
+<div *ngFor= "let entry of entries">
+    <div class="entry"> {{entry.title}}</div>
 </div>
 
 
-<div class="entry">
+<button>➕ Add new entry</button>
 
-📄 Grocery Day with Alia
-
-</div>
-
-
-<div class="entry">
-
-📄 Night Time Scare
-
-</div>
-
-
-<div class="entry">
-
-➕ Add new entry
-
-</div>
 
 
 <app-bottom-navbar></app-bottom-navbar>
 
 
 </div>
+
+
+
+
+
