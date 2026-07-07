@@ -37,6 +37,18 @@ font-size:18px;
 
 }
 
+.crud {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
 button {
-    padding:50;
+    color:blueviolet;
+    background-color: beige;
+}
+
+.delete{
+    margin-left:85%;
 }

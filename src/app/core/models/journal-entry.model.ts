@@ -1,6 +1,13 @@
 export interface JournalEntry {
-  id: string;
-  date: string;      // e.g. "2026-06-28"
+
+  id?: string;
+
   title: string;
-  notes: string;
+
+  description: string;
+
+  date: string;
+
+  lastModified: Date;
+
 }

@@ -20,7 +20,10 @@ import { NgFor } from '@angular/common';
 
 export class JournalLogComponent {
 
+  
   entries = MOCK_JOURNAL_ENTRIES;
+  
+
 
 
 }
