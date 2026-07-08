@@ -6,6 +6,9 @@ import { CalendarOptions } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import { CalendarService } from '../../../services/calendar.service';
 
+//step 1. inject router
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-calendar-widget',
   standalone: true,
@@ -22,7 +25,10 @@ export class CalendarComponent {
 
 
   //Inject Service 
-  constructor(private calendarService: CalendarService) {}
+  constructor(
+    private calendarService: CalendarService,
+    private router: Router
+  ) {}
 
 
   calendarOptions: CalendarOptions = {
@@ -47,6 +53,10 @@ export class CalendarComponent {
   };
 
     handleDateClick(arg: any) {
-    alert('Date clicked: ' + arg.dateStr);
+    
+      //save selected date & navigate to journal log page
+      this.calendarService.setSelectedDate(arg.dateStr);
+      console.log("Selected date:", arg.dateStr);
+      this.router.navigate(['/journal-log', arg.dateStr]);      //alert('Date clicked: ' + arg.dateStr);
     }
 }

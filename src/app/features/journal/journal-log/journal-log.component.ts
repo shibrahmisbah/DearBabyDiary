@@ -4,6 +4,8 @@ import { MOCK_JOURNAL_ENTRIES } from '../../../data/mock-journal-entries';
 import { NgFor } from '@angular/common';
 import { JournalService } from '../../../services/journal.service';
 import { CalendarService } from '../../../services/calendar.service';
+import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-journal-log',
@@ -28,13 +30,21 @@ export class JournalLogComponent {
   //add only title and desc.
   title = '';
   description = '';
+  selectedDate = '';
   
   constructor(
       private calendarService: CalendarService,
-      private journalService: JournalService
+      private journalService: JournalService,
+      private route: ActivatedRoute
   ){}
 
+  //retrieve selected date in journal log
+  ngOnInit() {
+        //this.selectedDate = this.calendarService.getSelectedDate()
+        this.selectedDate = this.route.snapshot.paramMap.get('date') ?? '';
+  }
 
+/*
   saveEntry() {
 
   this.journalService.addEntry({
@@ -49,9 +59,7 @@ export class JournalLogComponent {
 
   });
 
-}
-
-
+}**/
 
 
 }

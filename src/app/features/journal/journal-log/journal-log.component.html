@@ -20,8 +20,9 @@ type="text"
 placeholder="Search for entries">
 
 <div *ngFor= "let entry of entries">
-    <div class="entry"> {{entry.title}}
-    
+    <div class="entry"> 
+        {{entry.title}}
+        {{entry.date}}
         <button class="delete">Delete Entry</button>
 
     </div>

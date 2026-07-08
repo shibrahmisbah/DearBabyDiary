@@ -49,7 +49,7 @@ export const routes: Routes = [
   { path: 'home', component: HomeComponent },
 
   /** journal system */
-  { path: 'journal-log', component: JournalLogComponent },
+  { path: 'journal-log/:date', component: JournalLogComponent },
   { path: 'journal-entry', component: JournalEntryComponent },
 
   /** medical section */
