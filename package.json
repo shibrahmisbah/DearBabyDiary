@@ -16,6 +16,7 @@
     "@angular/common": "^22.0.0",
     "@angular/compiler": "^22.0.0",
     "@angular/core": "^22.0.0",
+    "@angular/fire": "^0.0.0",
     "@angular/forms": "^22.0.0",
     "@angular/material": "^22.0.2",
     "@angular/platform-browser": "^22.0.0",
@@ -25,7 +26,7 @@
     "@fullcalendar/daygrid": "^6.1.21",
     "@fullcalendar/interaction": "^6.1.21",
     "express": "^5.1.0",
-    "firebase": "^12.15.0",
+    "firebase": "^12.16.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },
